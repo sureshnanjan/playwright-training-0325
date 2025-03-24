@@ -1,0 +1,176 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20250324195624
+Username: INCOFORGETECH\Sanya.Sharma
+RunAs User: INCOFORGETECH\Sanya.Sharma
+Configuration Name: 
+Machine: LP-TZD-0X106172 (Microsoft Windows NT 10.0.19045.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 26780
+PSVersion: 5.1.19041.5369
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.5369
+BuildVersion: 10.0.19041.5369
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is sanya.txt
+PS C:\Users\sanya.sharma> New-Item -Path -Name QA-Training
+PS C:\Users\sanya.sharma> TerminatingError(New-Item): "Missing an argument for parameter 'Path'. Specify a parameter of type 'System.String[]' and try again."
+New-Item : Missing an argument for parameter 'Path'. Specify a parameter of type 'System.String[]' and try again.
+At line:1 char:10
++ New-Item -Path -Name QA-Training
++          ~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [New-Item], ParameterBindingException
+    + FullyQualifiedErrorId : MissingArgument,Microsoft.PowerShell.Commands.NewItemCommand
+New-Item : Missing an argument for parameter 'Path'. Specify a parameter of type
+'System.String[]' and try again.
+At line:1 char:10
++ New-Item -Path -Name QA-Training
++          ~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [New-Item], ParameterBindingException
+    + FullyQualifiedErrorId : MissingArgument,Microsoft.PowerShell.Commands.NewItemComma
+   nd
+
+PS C:\Users\sanya.sharma> New-Item -Path . -Name QA-Training
+
+
+    Directory: C:\Users\sanya.sharma
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        24-03-2025     20:05              0 QA-Training
+
+
+PS C:\Users\sanya.sharma> TerminatingError(TabExpansion2): "Cannot bind argument to parameter 'inputScript' because it is an empty string."
+PS C:\Users\sanya.sharma> TerminatingError(TabExpansion2): "Cannot bind argument to parameter 'inputScript' because it is an empty string."
+PS C:\Users\sanya.sharma> TerminatingError(TabExpansion2): "Cannot bind argument to parameter 'inputScript' because it is an empty string."
+PS C:\Users\sanya.sharma> TerminatingError(TabExpansion2): "Cannot bind argument to parameter 'inputScript' because it is an empty string."
+PS C:\Users\sanya.sharma> TerminatingError(TabExpansion2): "Cannot bind argument to parameter 'inputScript' because it is an empty string."
+PS C:\Users\sanya.sharma> TerminatingError(TabExpansion2): "Cannot bind argument to parameter 'inputScript' because it is an empty string."
+PS C:\Users\sanya.sharma> TerminatingError(TabExpansion2): "Cannot bind argument to parameter 'inputScript' because it is an empty string."
+PS C:\Users\sanya.sharma> TerminatingError(TabExpansion2): "Cannot bind argument to parameter 'inputScript' because it is an empty string."
+PS C:\Users\sanya.sharma> TerminatingError(TabExpansion2): "Cannot bind argument to parameter 'inputScript' because it is an empty string."
+PS C:\Users\sanya.sharma> TerminatingError(TabExpansion2): "Cannot bind argument to parameter 'inputScript' because it is an empty string."
+PS C:\Users\sanya.sharma> TerminatingError(TabExpansion2): "Cannot bind argument to parameter 'inputScript' because it is an empty string."
+PS C:\Users\sanya.sharma> TerminatingError(TabExpansion2): "Cannot bind argument to parameter 'inputScript' because it is an empty string."
+PS C:\Users\sanya.sharma> TerminatingError(TabExpansion2): "Cannot bind argument to parameter 'inputScript' because it is an empty string."
+PS C:\Users\sanya.sharma> TerminatingError(TabExpansion2): "Cannot bind argument to parameter 'inputScript' because it is an empty string."
+PS C:\Users\sanya.sharma> dir
+
+
+    Directory: C:\Users\sanya.sharma
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        14-01-2025     15:51                .Azure
+d-----        04-06-2024     20:00                .dotnet
+d-----        26-04-2024     15:23                .librarymanager
+d-----        23-04-2024     22:50                .nuget
+d-----        24-03-2025     17:11                .sonarlint
+d-----        01-05-2024     23:49                .ssh
+d-----        30-04-2024     20:02                .templateengine
+d-----        23-04-2024     18:39                .vscode
+d-r---        23-04-2024     15:48                3D Objects
+d-r---        23-04-2024     15:48                Contacts
+d-r---        18-03-2025     02:05                Desktop
+d-r---        24-03-2025     19:49                Documents
+d-r---        24-03-2025     19:48                Downloads
+d-r---        23-04-2024     15:48                Favorites
+d-r---        23-04-2024     15:48                Links
+d-r---        23-04-2024     15:48                Music
+d-----        05-12-2024     14:42                my-peabody
+d-r---        23-04-2024     16:00                OneDrive
+d-r---        17-05-2024     16:44                Pictures
+d-----        23-04-2024     18:42                Postman
+d-r---        23-04-2024     15:48                Saved Games
+d-r---        23-04-2024     15:49                Searches
+d-----        23-04-2024     19:22                source
+d-r---        26-04-2024     12:50                Videos
+-a----        31-05-2024     23:00             85 .gitconfig
+-a----        08-07-2024     19:58            121 .yarnrc
+-a----        24-03-2025     20:05              0 QA-Training
+-a----        24-03-2025     19:56              0 sanya.txt
+
+
+PS C:\Users\sanya.sharma> TerminatingError(TabExpansion2): "Cannot bind argument to parameter 'inputScript' because it is an empty string."
+PS C:\Users\sanya.sharma> TerminatingError(TabExpansion2): "Cannot bind argument to parameter 'inputScript' because it is an empty string."
+PS C:\Users\sanya.sharma> TerminatingError(TabExpansion2): "Cannot bind argument to parameter 'inputScript' because it is an empty string."
+PS C:\Users\sanya.sharma> TerminatingError(TabExpansion2): "Cannot bind argument to parameter 'inputScript' because it is an empty string."
+PS C:\Users\sanya.sharma> TerminatingError(TabExpansion2): "Cannot bind argument to parameter 'inputScript' because it is an empty string."
+PS C:\Users\sanya.sharma> Set-Location .\QA-Training
+Set-Location : Cannot find path '.\QA-Training' because it does not exist.
+At line:1 char:1
++ Set-Location .\QA-Training
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (.\QA-Training:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+Set-Location : Cannot find path '.\QA-Training' because it does not exist.
+At line:1 char:1
++ Set-Location .\QA-Training
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (.\QA-Training:String) [Set-Location], Ite
+   mNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationComm
+   and
+
+PS C:\Users\sanya.sharma> Set-Location .\QA-Training\
+Set-Location : Cannot find path 'C:\Users\sanya.sharma\QA-Training\' because it does not exist.
+At line:1 char:1
++ Set-Location .\QA-Training\
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\sanya.sharma\QA-Training\:String) [Set-Location], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+Set-Location : Cannot find path 'C:\Users\sanya.sharma\QA-Training\' because it does not
+exist.
+At line:1 char:1
++ Set-Location .\QA-Training\
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\sanya.sharma\QA-Training\:String
+   ) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationComm
+   and
+
+PS C:\Users\sanya.sharma> New-Item -Path . -Name QA-Training -Type Directory
+
+
+    Directory: C:\Users\sanya.sharma
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        24-03-2025     20:10                QA-Training
+
+
+PS C:\Users\sanya.sharma> Set-Location .\QA-Training\
+PS C:\Users\sanya.sharma\QA-Training> git --version
+git version 2.44.0.windows.1
+PS C:\Users\sanya.sharma\QA-Training> git clone https://github.com/sureshnanjan/playwright-training-0325.git
+Cloning into 'playwright-training-0325'...
+remote: Enumerating objects: 8, done.
+remote: Counting objects: 100% (8/8), done.
+remote: Compressing objects: 100% (8/8), done.
+remote: Total 8 (delta 1), reused 4 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (8/8), done.
+Resolving deltas: 100% (1/1), done.
+PS C:\Users\sanya.sharma\QA-Training> Set-Location playwright-training-0325
+PS C:\Users\sanya.sharma\QA-Training\playwright-training-0325> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\Users\sanya.sharma\QA-Training\playwright-training-0325> git checkout -b sanya-branch
+Switched to a new branch 'sanya-branch'
+PS C:\Users\sanya.sharma\QA-Training\playwright-training-0325> git status
+On branch sanya-branch
+nothing to commit, working tree clean
+PS C:\Users\sanya.sharma\QA-Training\playwright-training-0325> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20250324202358
+**********************
