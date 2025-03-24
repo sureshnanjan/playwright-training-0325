@@ -1,0 +1,53 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20250324200949
+Username: INCOFORGETECH\Aditya.16.Singh
+RunAs User: INCOFORGETECH\Aditya.16.Singh
+Configuration Name: 
+Machine: LAP-TZ-0X117264 (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 28152
+PSVersion: 5.1.22621.4391
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.4391
+BuildVersion: 10.0.22621.4391
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is qaTraining.txt
+PS C:\Users\aditya.16.singh> New-Item -Path C:\qaTraining -Name ‘QA-Training’ -ItemType Directory
+
+
+    Directory: C:\qaTraining
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        24-03-2025     20:12                QA-Training
+
+
+PS C:\Users\aditya.16.singh> Set-Location C:\qaTraining\QA-Training
+PS C:\qaTraining\QA-Training> git --version
+git version 2.44.0.windows.1
+PS C:\qaTraining\QA-Training> git clone https://github.com/sureshnanjan/playwright-training-0325.git
+Cloning into 'playwright-training-0325'...
+remote: Enumerating objects: 8, done.
+remote: Counting objects: 100% (8/8), done.
+remote: Compressing objects: 100% (8/8), done.
+remote: Total 8 (delta 1), reused 4 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (8/8), done.
+Resolving deltas: 100% (1/1), done.
+PS C:\qaTraining\QA-Training> Set-Location playwright-training-0325
+PS C:\qaTraining\QA-Training\playwright-training-0325> git status
+nothing to commit, working tree clean
+PS C:\qaTraining\QA-Training\playwright-training-0325> git checkout -b aditya-branch
+
+PS C:\qaTraining\QA-Training\playwright-training-0325> git status
+
+PS C:\qaTraining\QA-Training\playwright-training-0325> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20250324202408
+**********************
