@@ -1,0 +1,65 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20250324195917
+Username: INCOFORGETECH\Mohini.Bhardwaj
+RunAs User: INCOFORGETECH\Mohini.Bhardwaj
+Configuration Name: 
+Machine: LP-TZ-0X117404 (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 14732
+PSVersion: 5.1.22621.4391
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.4391
+BuildVersion: 10.0.22621.4391
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is mohini.txt
+PS C:\Users\Mohini.Bhardwaj> New-Item -Path . -Name 'QA-Training' -ItemType Directory
+
+
+    Directory: C:\Users\Mohini.Bhardwaj
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        24-03-2025     20:21                QA-Training
+
+
+PS C:\Users\Mohini.Bhardwaj> New-Item -Path . -Name 'QA-Training' -ItemType Directory
+New-Item : An item with the specified name C:\Users\Mohini.Bhardwaj\QA-Training already exists.
+At line:1 char:1
++ New-Item -Path . -Name 'QA-Training' -ItemType Directory
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ResourceExists: (C:\Users\Mohini.Bhardwaj\QA-Training:String) [New-Item], IOException
+    + FullyQualifiedErrorId : DirectoryExist,Microsoft.PowerShell.Commands.NewItemCommand
+New-Item : An item with the specified name
+C:\Users\Mohini.Bhardwaj\QA-Training already exists.
+At line:1 char:1
++ New-Item -Path . -Name 'QA-Training' -ItemType Directory
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ResourceExists: (C:\Users\Mohini.Bhardwaj\
+   QA-Training:String) [New-Item], IOException
+    + FullyQualifiedErrorId : DirectoryExist,Microsoft.PowerShell.Comman
+   ds.NewItemCommand
+
+PS C:\Users\Mohini.Bhardwaj> Set-Location .\QA-Training\
+PS C:\Users\Mohini.Bhardwaj\QA-Training> git --version
+git version 2.44.0.windows.1
+PS C:\Users\Mohini.Bhardwaj\QA-Training> git clone https://github.com/sureshnanjan/playwright-training-0325
+Receiving objects: 100% (8/8), done.
+Resolving deltas: 100% (1/1), done.
+PS C:\Users\Mohini.Bhardwaj\QA-Training> Set-Location .\playwright-training-0325\
+PS C:\Users\Mohini.Bhardwaj\QA-Training\playwright-training-0325> git status
+
+PS C:\Users\Mohini.Bhardwaj\QA-Training\playwright-training-0325> git checkout -b Mohini-branch
+
+PS C:\Users\Mohini.Bhardwaj\QA-Training\playwright-training-0325> git status
+
+PS C:\Users\Mohini.Bhardwaj\QA-Training\playwright-training-0325> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20250324203303
+**********************
