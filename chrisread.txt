@@ -1,0 +1,337 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20250324141851
+Username: UKCOFORGETECH\chris.read
+RunAs User: UKCOFORGETECH\chris.read
+Configuration Name: 
+Machine: LAP-UK-08078604 (Microsoft Windows NT 10.0.19045.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 15236
+PSVersion: 5.1.19041.5607
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.5607
+BuildVersion: 10.0.19041.5607
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is chrisread.txt
+PS C:\Users\chris.read> dir
+
+
+    Directory: C:\Users\chris.read
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        01/08/2022     08:40                .ms-ad
+d-----        28/11/2023     13:34                .vscode
+d-----        08/11/2023     10:51                2023-11-09-GET-Histor
+                                                  y-by-Identifier-Activ
+                                                  e-Scan-ZAP-Report-1
+d-----        08/11/2023     10:51                2023-11-09-ZAP-Report
+                                                  -
+d-----        08/11/2023     10:51                2023-11-09-ZAP-Report
+                                                  -2
+d-----        08/11/2023     10:51                2023-11-09-ZAP-Report
+                                                  -3
+d-----        08/11/2023     10:51                2023-11-09-ZAP-Report
+                                                  -4
+d-----        08/11/2023     10:51                2023-11-09-ZAP-Report
+                                                  -5
+d-----        08/11/2023     10:51                2023-11-10-ZAP-Add
+                                                  an Update-Active-Scan
+                                                  -Report-
+d-----        08/11/2023     10:51                2023-11-10-ZAP-Add
+                                                  an
+                                                  Update-Spider-Report-
+d-----        08/11/2023     10:51                2023-11-10-ZAP-Report
+                                                  -Add an
+                                                  Update-Spider-Scan-
+d-----        08/11/2023     10:51                2023-11-10-ZAP-Report
+                                                  -Update a Case
+                                                  Action - Save Scan-
+d-----        08/11/2023     10:51                2023-11-13-ZAP-Report
+                                                  -PATCH-Update a Case
+                                                  Action - Save and
+                                                  Complete-Scan-
+d-----        08/11/2023     10:51                2023-11-13-ZAP-Report
+                                                  -PATCH-Update a Case
+                                                  Action -
+                                                  Save-Spider-Scan-
+d-----        08/11/2023     10:51                2023-11-13-ZAP-Report
+                                                  2023-11-13-ZAP-Report
+                                                  -PATCH-Update a Case
+                                                  Action - Save and
+                                                  Complete-Spider-Scan-
+d-----        08/11/2023     10:51                2024-09-03-ZAP-Report
+                                                  -
+d-----        08/11/2023     10:51                2024-09-04-ZAP-Report
+                                                  -GET-Availability
+                                                  Work
+                                                  Orders-Active-Scan
+d-----        08/11/2023     10:51                2024-09-04-ZAP-Report
+                                                  -GET-Availability
+                                                  Work
+                                                  Orders-Spider-Scan
+d-----        08/11/2023     10:51                2024-09-05-ZAP-Report
+                                                  -
+d-----        08/11/2023     10:51                2024-09-05-ZAP-Report
+                                                  -GET-GetWorkOrderById
+                                                  -Active-Scan
+d-----        08/11/2023     10:51                2024-09-05-ZAP-Report
+                                                  -GET-GetWorkOrderById
+                                                  -Spider-Scan
+d-----        08/11/2023     10:51                2024-09-05-ZAP-Report
+                                                  -Post-External
+                                                  WorkOrders
+d-----        08/11/2023     10:51                2024-09-05-ZAP-Report
+                                                  -Post-External WorkOr
+                                                  ders-Spider-Scan
+d-----        08/11/2023     10:51                2024-09-06-ZAP-Report
+                                                  -GET-Availability
+                                                  Work Orders
+d-----        08/11/2023     10:51                2024-09-06-ZAP-Report
+                                                  -POST-Confirm
+                                                  Booking-Active-Scan
+d-----        08/11/2023     10:51                2024-09-06-ZAP-Report
+                                                  -POST-Confirm-Booking
+                                                  -Active-Scan
+d-----        08/11/2023     10:51                2024-09-06-ZAP-Report
+                                                  -POST-Confirm-Booking
+                                                  -Spider-Scan
+d-r---        22/07/2022     16:44                3D Objects
+d-r---        22/07/2022     16:44                Contacts
+d-r---        21/03/2025     14:35                Desktop
+d-r---        10/02/2025     15:48                Documents
+d-r---        24/03/2025     14:17                Downloads
+d-r---        22/07/2022     16:44                Favorites
+d-r---        22/07/2022     16:44                Links
+d-----        09/02/2024     12:50                mcafee dlp
+                                                  quarantined files
+d-r---        22/07/2022     16:44                Music
+d-----        23/09/2022     08:50                New folder
+d-----        30/11/2023     09:52                node_modules
+d-r---        23/07/2022     09:40                OneDrive
+dar--l        24/03/2025     10:32                OneDrive - Coforge
+                                                  Limited
+d-----        13/11/2023     13:13                OWASP ZAP
+d-r---        18/03/2025     10:04                Pictures
+d-----        23/07/2022     09:46                Postman
+d-----        05/04/2024     12:40                Postman Agent
+d-r---        22/07/2022     16:44                Saved Games
+d-r---        22/07/2022     16:46                Searches
+d-r---        22/09/2022     17:10                Videos
+-a----        21/11/2023     13:36             10 .bash_history
+-a----        09/11/2023     18:45         126046 2023-11-09-ZAP-Report
+                                                  -by-query-parameter-A
+                                                  ctive-Scan.html
+-a----        09/11/2023     18:58       35720022 2023-11-09-ZAP-Report
+                                                  -by-query-parameter-S
+                                                  cans.zip
+-a----        09/11/2023     18:46      136468733 2023-11-09-ZAP-Report
+                                                  -by-query-parameter-S
+                                                  pider-Scan.html
+-a----        09/11/2023     15:01         441577 2023-11-09-ZAP-Report
+                                                  -Get-History-by-Ident
+                                                  ifier-Active-Scan.htm
+                                                  l
+-a----        09/11/2023     18:48       71484747 2023-11-09-ZAP-Report
+                                                  -Get-History-by-Ident
+                                                  ifier-Scans.zip
+-a----        09/11/2023     15:04      136784350 2023-11-09-ZAP-Report
+                                                  -Get-History-by-Ident
+                                                  ifier-Spider-Scan.htm
+                                                  l
+-a----        10/11/2023     15:14         167766 2023-11-10-ZAP-Report
+                                                  -Add an Update-Active
+                                                  -Scan.html
+-a----        10/11/2023     15:26      136353102 2023-11-10-ZAP-Report
+                                                  -Add an Update-Spider
+                                                  -Scan.html
+-a----        10/11/2023     15:27       35713789 2023-11-10-ZAP-Report
+                                                  -POST-Add an
+                                                  Update-Scans.zip
+-a----        04/09/2024     19:51         452505 2024-09-04-ZAP-Report
+                                                  -GET-Availability
+                                                  Work Orders-Active-Sc
+                                                  an.html
+-a----        04/09/2024     19:54          54913 2024-09-04-ZAP-Report
+                                                  -GET-Availability
+                                                  Work Orders-Scans.zip
+-a----        04/09/2024     19:53         455102 2024-09-04-ZAP-Report
+                                                  -GET-Availability
+                                                  Work Orders-Spider-Sc
+                                                  an.html
+-a----        05/09/2024     11:09         198493 2024-09-05-ZAP-Report
+                                                  -GET-GetWorkOrderById
+                                                  -Active-Scan.html
+-a----        05/09/2024     11:11          26094 2024-09-05-ZAP-Report
+                                                  -GET-GetWorkOrderById
+                                                  -Active-Scans.zip
+-a----        05/09/2024     11:11         201090 2024-09-05-ZAP-Report
+                                                  -GET-GetWorkOrderById
+                                                  -Spider-Scan.html
+-a----        05/09/2024     22:26         138780 2024-09-05-ZAP-Report
+                                                  -POST-External WorkOr
+                                                  ders-Active-Scan.html
+-a----        05/09/2024     22:29          17232 2024-09-05-ZAP-Report
+                                                  -POST-External
+                                                  WorkOrders-Scans.zip
+-a----        05/09/2024     22:28         138852 2024-09-05-ZAP-Report
+                                                  -POST-External WorkOr
+                                                  ders-Spider-Scan.html
+-a----        06/09/2024     13:42         124437 2024-09-06-ZAP-Report
+                                                  -POST-Confirm-Booking
+                                                  -Active-Scan.html
+-a----        06/09/2024     13:43          22238 2024-09-06-ZAP-Report
+                                                  -POST-Confirm-Booking
+                                                  -Scans.zip
+-a----        06/09/2024     13:43         127030 2024-09-06-ZAP-Report
+                                                  -POST-Confirm-Booking
+                                                  -Spider-Scan.html
+-a----        17/02/2025     14:11         154835 2025-02-17-ZAP-Active
+                                                  ScannerReport.html
+-a----        17/02/2025     14:16         154831 2025-02-17-ZAP-Spider
+                                                  ScannerReport.html
+-a----        24/03/2025     14:18              0 chrisread.txt
+
+
+PS C:\Users\chris.read> New-Item -Path <path/to/workingfolder> -Name ‘QA-Training’ -ItemType Directory 
+At line:1 char:16
++ New-Item -Path <path/to/workingfolder> -Name ‘QA-Training’ -ItemType  ...
++                ~
+The '<' operator is reserved for future use.
+At line:1 char:16
++ New-Item -Path <path/to/workingfolder> -Name ‘QA-Training’ -ItemType
+ ...
++                ~
+The '<' operator is reserved for future use.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsError
+   RecordException
+    + FullyQualifiedErrorId : RedirectionNotSupported
+
+PS C:\Users\chris.read> New-Item -Path path/to/workingfolder> -Name ‘QA-Training’ -ItemType Directory 
+New-Item : Illegal characters in path.
+At line:1 char:1
++ New-Item -Path path/to/workingfolder> -Name ‘QA-Training’ -ItemType D ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (C:\Users\chris....er>\QA-Training:String) [New-Item], ArgumentException
+    + FullyQualifiedErrorId : ItemExistsArgumentError,Microsoft.PowerShell.Commands.NewItemCommand
+New-Item : Illegal characters in path.
+At line:1 char:1
++ New-Item -Path path/to/workingfolder> -Name ‘QA-Training’ -ItemType D ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (C:\Users\chris....er>\QA-Training:String) [New-Item], ArgumentException
+    + FullyQualifiedErrorId : ItemExistsArgumentError,Microsoft.PowerShell.Commands.NewItemCommand
+
+PS C:\Users\chris.read> New-Item -Path path/to/workingfolder> -Name QA-Training1 -ItemType Directory 
+New-Item : Illegal characters in path.
+At line:1 char:1
++ New-Item -Path path/to/workingfolder> -Name QA-Training1 -ItemType Di ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (C:\Users\chris....r>\QA-Training1:String) [New-Item], ArgumentException
+    + FullyQualifiedErrorId : ItemExistsArgumentError,Microsoft.PowerShell.Commands.NewItemCommand
+New-Item : Illegal characters in path.
+At line:1 char:1
++ New-Item -Path path/to/workingfolder> -Name QA-Training1 -ItemType
+Di ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (C:\Users\chris....r>\Q
+   A-Training1:String) [New-Item], ArgumentException
+    + FullyQualifiedErrorId : ItemExistsArgumentError,Microsoft.PowerS
+   hell.Commands.NewItemCommand
+
+PS C:\Users\chris.read> New-Item -Path path/to/workingfolder> -Name QA-Training1 -ItemType Directory 
+New-Item : Illegal characters in path.
+At line:1 char:1
++ New-Item -Path path/to/workingfolder> -Name QA-Training1 -ItemType Di ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (C:\Users\chris....r>\QA-Training1:String) [New-Item], ArgumentException
+    + FullyQualifiedErrorId : ItemExistsArgumentError,Microsoft.PowerShell.Commands.NewItemCommand
+New-Item : Illegal characters in path.
+At line:1 char:1
++ New-Item -Path path/to/workingfolder> -Name QA-Training1 -ItemType Di ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (C:\Users\chris....r>\QA-Training1:String) [New-Item], ArgumentException
+    + FullyQualifiedErrorId : ItemExistsArgumentError,Microsoft.PowerShell.Commands.NewItemCommand
+
+PS C:\Users\chris.read> New-Item -path . -name qa-training1 -Type Directory
+
+
+    Directory: C:\Users\chris.read
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        24/03/2025     14:38                qa-training1
+
+
+PS C:\Users\chris.read> Set-Location qa-training1 \QA-Training
+>> TerminatingError(Set-Location): "A positional parameter cannot be found that accepts argument '\QA-Training'."
+Set-Location : A positional parameter cannot be found that accepts argument '\QA-Training'.
+At line:1 char:1
++ Set-Location qa-training1 \QA-Training
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Location], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+Set-Location : A positional parameter cannot be found that accepts
+argument '\QA-Training'.
+At line:1 char:1
++ Set-Location qa-training1 \QA-Training
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Location], Par
+   ameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.Po
+   werShell.Commands.SetLocationCommand
+
+PS C:\Users\chris.read> Set-Location qa-training1 \QA-Training
+>> TerminatingError(Set-Location): "A positional parameter cannot be found that accepts argument '\QA-Training'."
+Set-Location : A positional parameter cannot be found that accepts argument '\QA-Training'.
+At line:1 char:1
++ Set-Location qa-training1 \QA-Training
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Location], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+Set-Location : A positional parameter cannot be found that accepts
+argument '\QA-Training'.
+At line:1 char:1
++ Set-Location qa-training1 \QA-Training
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Location], Par
+   ameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.Po
+   werShell.Commands.SetLocationCommand
+
+PS C:\Users\chris.read> Set-Location qa-training1
+PS C:\Users\chris.read\qa-training1> git --version
+git version 2.43.0.windows.1
+PS C:\Users\chris.read\qa-training1> Invoke-WebRequest -Uri https://github.com/git-for-windows/git/releases/download/v2.44.0.windows.1/Git-2.44.0-64-bit.exe -OutFile git-installer.exe
+PS C:\Users\chris.read\qa-training1> .\git-installer.exe /VERYSILENT /NORESTART
+PS C:\Users\chris.read\qa-training1> git –-version git version 2.32.0.windows.2 
+
+PS C:\Users\chris.read\qa-training1> git clone https://github.com/sureshnanjan/playwright-training-0325.git
+Cloning into 'playwright-training-0325'...
+remote: Enumerating objects: 8, done.
+remote: Counting objects: 100% (8/8), done.
+remote: Compressing objects: 100% (8/8), done.
+remote: Total 8 (delta 1), reused 4 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (8/8), done.
+Resolving deltas: 100% (1/1), done.
+PS C:\Users\chris.read\qa-training1> Set-Location playwright-training-0325
+PS C:\Users\chris.read\qa-training1\playwright-training-0325> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\Users\chris.read\qa-training1\playwright-training-0325> git checkout -b qa.training1-branch  
+Switched to a new branch 'qa.training1-branch'
+PS C:\Users\chris.read\qa-training1\playwright-training-0325> git status
+On branch qa.training1-branch
+nothing to commit, working tree clean
+PS C:\Users\chris.read\qa-training1\playwright-training-0325> Stop-Transcript 
+**********************
+Windows PowerShell transcript end
+End time: 20250324144648
+**********************
