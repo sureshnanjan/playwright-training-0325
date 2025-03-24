@@ -1,0 +1,101 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20250324195046
+Username: INCOFORGETECH\Sweety.Kamboj
+RunAs User: INCOFORGETECH\Sweety.Kamboj
+Configuration Name: 
+Machine: LP-TZ-0X82258 (Microsoft Windows NT 10.0.19045.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 24384
+PSVersion: 5.1.19041.5247
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.5247
+BuildVersion: 10.0.19041.5247
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is Sweety.txt
+PS C:\Users\sweety.kamboj\playwright> New-Item -Path C:\Users\sweety.kamboj\playwright\working_playwright -Name ‘QA-Training’ -ItemType Directory 
+
+
+    Directory: C:\Users\sweety.kamboj\playwright\working_playwright
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        24-03-2025     19:56                QA-Training
+
+
+PS C:\Users\sweety.kamboj\playwright> Set-Location C:\Users\sweety.kamboj\playwright\working_playwrightC:\Users\sweety.kamboj\playwright\working_playwright\QA-Training
+Set-Location : Cannot find path 
+'C:\Users\sweety.kamboj\playwright\working_playwrightC:\Users\sweety.kamboj\playwright\working_playwright\QA-Training' 
+because it does not exist.
+At line:1 char:1
++ Set-Location C:\Users\sweety.kamboj\playwright\working_playwrightC:\U ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\sweety...ght\QA-Training:String) [Set-Location], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+Set-Location : Cannot find path 'C:\Users\sweety.kamboj\playwright\working_playwrightC:\Users\sweety.kamboj\playwright\working_playwright\QA-Training' because it does not exist.
+At line:1 char:1
++ Set-Location C:\Users\sweety.kamboj\playwright\working_playwrightC:\U ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\sweety...ght\QA-Training:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\sweety.kamboj\playwright> Set-Location working_playwright\QA-Training
+PS C:\Users\sweety.kamboj\playwright\working_playwright\QA-Training> git --version  
+git version 2.41.0.windows.3
+PS C:\Users\sweety.kamboj\playwright\working_playwright\QA-Training> Invoke-WebRequest -Uri https://github.com/git-for-windows/git/releases/download/v2.44.0.windows.1/Git-2.44.0-64-bit.exe -OutFile git-installer.exe 
+PS C:\Users\sweety.kamboj\playwright\working_playwright\QA-Training> .\git-installer.exe /VERYSILENT /NORESTART 
+PS C:\Users\sweety.kamboj\playwright\working_playwright\QA-Training> git –-version 
+git: '–-version' is not a git command. See 'git --help'.
+PS C:\Users\sweety.kamboj\playwright\working_playwright\QA-Training> git –-version
+BUG (fork bomb): C:\Users\sweety.kamboj\AppData\Local\Programs\Git\bin\git.exe
+PS C:\Users\sweety.kamboj\playwright\working_playwright\QA-Training> git –-version
+BUG (fork bomb): C:\Users\sweety.kamboj\AppData\Local\Programs\Git\bin\git.exe
+PS C:\Users\sweety.kamboj\playwright\working_playwright\QA-Training> git –-version
+git: 'ΓÇô-version' is not a git command. See 'git --help'.
+PS C:\Users\sweety.kamboj\playwright\working_playwright\QA-Training> git --version
+git version 2.44.0.windows.1
+PS C:\Users\sweety.kamboj\playwright\working_playwright\QA-Training> git clone https://github.com/sureshnanjan/playwright-training-0325.git
+Cloning into 'playwright-training-0325'...
+remote: Enumerating objects: 8, done.
+remote: Counting objects: 100% (8/8), done.
+remote: Compressing objects: 100% (8/8), done.
+remote: Total 8 (delta 1), reused 4 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (8/8), done.
+Resolving deltas: 100% (1/1), done.
+PS C:\Users\sweety.kamboj\playwright\working_playwright\QA-Training> Set-Location playwright-training-0325
+PS C:\Users\sweety.kamboj\playwright\working_playwright\QA-Training\playwright-training-0325> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\Users\sweety.kamboj\playwright\working_playwright\QA-Training\playwright-training-0325> checkout -b sweety-branch
+checkout : The term 'checkout' is not recognized as the name of a cmdlet, function, script file, or operable program. 
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ checkout -b sweety-branch
++ ~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (checkout:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+checkout : The term 'checkout' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ checkout -b sweety-branch
++ ~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (checkout:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\sweety.kamboj\playwright\working_playwright\QA-Training\playwright-training-0325> git checkout -b sweety-branch
+Switched to a new branch 'sweety-branch'
+PS C:\Users\sweety.kamboj\playwright\working_playwright\QA-Training\playwright-training-0325> git status
+On branch sweety-branch
+nothing to commit, working tree clean
+PS C:\Users\sweety.kamboj\playwright\working_playwright\QA-Training\playwright-training-0325> Stop-Transcript 
+**********************
+Windows PowerShell transcript end
+End time: 20250324200751
+**********************
