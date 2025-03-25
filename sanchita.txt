@@ -1,0 +1,64 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20250325160356
+Username: INCOFORGETECH\Sanchita.Saxena
+RunAs User: INCOFORGETECH\Sanchita.Saxena
+Configuration Name: 
+Machine: LAP-TZ-0X115364 (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 16756
+PSVersion: 5.1.22621.4391
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.4391
+BuildVersion: 10.0.22621.4391
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is sanchita.txt
+PS C:\Users\sanchita.saxena> New-Item -Path . -Name QA-Training -Type Directory
+
+
+    Directory: C:\Users\sanchita.saxena
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        25-03-2025     16:05                QA-Training
+
+
+PS C:\Users\sanchita.saxena> Set-Location .\QA-Training
+PS C:\Users\sanchita.saxena\QA-Training> git -version
+unknown option: -version
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--config-env=<name>=<envvar>] <command> [<args>]
+PS C:\Users\sanchita.saxena\QA-Training> git --version
+git version 2.43.0.windows.1
+PS C:\Users\sanchita.saxena\QA-Training> git clone https://github.com/sureshnanjan/playwright-training-0325.git
+
+PS C:\Users\sanchita.saxena\QA-Training> Set-Location playwright-training-0325
+PS C:\Users\sanchita.saxena\QA-Training\playwright-training-0325> dir
+
+
+    Directory: C:\Users\sanchita.saxena\QA-Training\playwright-training-0325
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        25-03-2025     16:08           2277 .gitignore
+-a----        25-03-2025     16:08             92 README.md
+
+
+PS C:\Users\sanchita.saxena\QA-Training\playwright-training-0325> git checkout -b sanchita-branch
+
+PS C:\Users\sanchita.saxena\QA-Training\playwright-training-0325> git status
+
+PS C:\Users\sanchita.saxena\QA-Training\playwright-training-0325> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20250325161040
+**********************
