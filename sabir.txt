@@ -1,0 +1,213 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20250324195606
+Username: INCOFORGETECH\Md.Ahmed
+RunAs User: INCOFORGETECH\Md.Ahmed
+Configuration Name: 
+Machine: LAP-TZD-0X96812 (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 19040
+PSVersion: 5.1.22621.4391
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.4391
+BuildVersion: 10.0.22621.4391
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is sabir.txt
+PS C:\Users\Md.Ahmed> New-Item -path . -name qa-training
+
+
+    Directory: C:\Users\Md.Ahmed
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         3/24/2025   7:59 PM              0 qa-training
+
+
+PS C:\Users\Md.Ahmed> dir
+
+
+    Directory: C:\Users\Md.Ahmed
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----          5/3/2023   4:21 PM                .cache
+d-----         12/4/2021   1:41 PM                .cisco
+d-----        10/10/2024   7:56 PM                .config
+d-----         6/26/2024   5:34 PM                .dotnet
+d-----         3/24/2025   2:12 PM                .gk
+d-----         5/24/2022   6:32 PM                .librarymanager
+d-----         1/15/2024   6:57 PM                .nuget
+d-----         1/15/2024   3:16 PM                .rest-client
+d-----         3/24/2025   5:23 PM                .sonarlint
+d-----         6/26/2024   5:26 PM                .templateengine
+d-----        12/17/2024   5:32 PM                .th-client
+d-----         6/13/2023   1:36 PM                .vscode
+d-r---         12/4/2021   1:40 PM                3D Objects
+d-r---         1/27/2025   1:14 PM                Contacts
+d-----         12/4/2021   3:39 PM                Documents
+d-r---         3/19/2025   2:08 PM                Downloads
+d-r---         1/27/2025   1:14 PM                Favorites
+d-----          1/4/2023   5:12 PM                jsmpeg
+d-r---         1/27/2025   1:14 PM                Links
+d-r---         1/27/2025   1:14 PM                Music
+d-----        12/17/2024   4:53 PM                MyJavaProject
+d-----         4/25/2024   3:52 PM                node_modules
+d-r---         12/6/2021  10:14 AM                OneDrive
+dar--l         3/24/2025   7:07 PM                OneDrive - Coforge Limited
+d-----         9/13/2022   6:01 PM                OWASP ZAP
+d-----          6/6/2023   4:33 PM                Postman
+d-r---         1/27/2025   1:14 PM                Saved Games
+d-r---         1/27/2025   1:14 PM                Searches
+d-----         4/25/2022  12:32 PM                source
+d-r---         1/27/2025   1:14 PM                Videos
+-a----          3/8/2022  12:27 PM             89 .angular-config.json
+-a----          6/2/2022  10:21 PM            261 .bash_history
+-a----         1/18/2022   5:02 PM             72 .gitconfig
+-a----        10/25/2022   6:44 PM             20 .lesshst
+-a----         12/7/2021   9:45 AM              0 .node_repl_history
+-a----        10/31/2023   1:04 PM            121 .yarnrc
+-a----         1/18/2022   5:02 PM             63 mercurial.ini
+-a----         4/25/2024   3:52 PM           9744 package-lock.json
+-a----         4/25/2024   3:52 PM            107 package.json
+-a----         3/24/2025   7:59 PM              0 qa-training
+-a----         3/24/2025   7:56 PM              0 sabir.txt
+
+
+PS C:\Users\Md.Ahmed> Set-Location qa-training
+Set-Location : Cannot find path 'qa-training' because it does not exist.
+At line:1 char:1
++ Set-Location qa-training
++ ~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (qa-training:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+Set-Location : Cannot find path 'qa-training' because it does not exist.
+At line:1 char:1
++ Set-Location qa-training
++ ~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (qa-training:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\Md.Ahmed> Set-Location .\qa-training
+Set-Location : Cannot find path '.\qa-training' because it does not exist.
+At line:1 char:1
++ Set-Location .\qa-training
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (.\qa-training:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+Set-Location : Cannot find path '.\qa-training' because it does not exist.
+At line:1 char:1
++ Set-Location .\qa-training
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (.\qa-training:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\Md.Ahmed> New-Item -path . -name qa-training -Type Directory
+New-Item : An item with the specified name C:\Users\Md.Ahmed\qa-training already exists.
+At line:1 char:1
++ New-Item -path . -name qa-training -Type Directory
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ResourceExists: (C:\Users\Md.Ahmed\qa-training:String) [New-Item], IOException
+    + FullyQualifiedErrorId : DirectoryExist,Microsoft.PowerShell.Commands.NewItemCommand
+New-Item : An item with the specified name C:\Users\Md.Ahmed\qa-training already exists.
+At line:1 char:1
++ New-Item -path . -name qa-training -Type Directory
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ResourceExists: (C:\Users\Md.Ahmed\qa-training:String) [New-Item], IOException
+    + FullyQualifiedErrorId : DirectoryExist,Microsoft.PowerShell.Commands.NewItemCommand
+
+PS C:\Users\Md.Ahmed> New-Item -path . -name qa-training1 -Type Directory
+
+
+    Directory: C:\Users\Md.Ahmed
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         3/24/2025   8:03 PM                qa-training1
+
+
+PS C:\Users\Md.Ahmed> dir
+
+
+    Directory: C:\Users\Md.Ahmed
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----          5/3/2023   4:21 PM                .cache
+d-----         12/4/2021   1:41 PM                .cisco
+d-----        10/10/2024   7:56 PM                .config
+d-----         6/26/2024   5:34 PM                .dotnet
+d-----         3/24/2025   2:12 PM                .gk
+d-----         5/24/2022   6:32 PM                .librarymanager
+d-----         1/15/2024   6:57 PM                .nuget
+d-----         1/15/2024   3:16 PM                .rest-client
+d-----         3/24/2025   5:23 PM                .sonarlint
+d-----         6/26/2024   5:26 PM                .templateengine
+d-----        12/17/2024   5:32 PM                .th-client
+d-----         6/13/2023   1:36 PM                .vscode
+d-r---         12/4/2021   1:40 PM                3D Objects
+d-r---         1/27/2025   1:14 PM                Contacts
+d-----         12/4/2021   3:39 PM                Documents
+d-r---         3/19/2025   2:08 PM                Downloads
+d-r---         1/27/2025   1:14 PM                Favorites
+d-----          1/4/2023   5:12 PM                jsmpeg
+d-r---         1/27/2025   1:14 PM                Links
+d-r---         1/27/2025   1:14 PM                Music
+d-----        12/17/2024   4:53 PM                MyJavaProject
+d-----         4/25/2024   3:52 PM                node_modules
+d-r---         12/6/2021  10:14 AM                OneDrive
+dar--l         3/24/2025   7:07 PM                OneDrive - Coforge Limited
+d-----         9/13/2022   6:01 PM                OWASP ZAP
+d-----          6/6/2023   4:33 PM                Postman
+d-----         3/24/2025   8:03 PM                qa-training1
+d-r---         1/27/2025   1:14 PM                Saved Games
+d-r---         1/27/2025   1:14 PM                Searches
+d-----         4/25/2022  12:32 PM                source
+d-r---         1/27/2025   1:14 PM                Videos
+-a----          3/8/2022  12:27 PM             89 .angular-config.json
+-a----          6/2/2022  10:21 PM            261 .bash_history
+-a----         1/18/2022   5:02 PM             72 .gitconfig
+-a----        10/25/2022   6:44 PM             20 .lesshst
+-a----         12/7/2021   9:45 AM              0 .node_repl_history
+-a----        10/31/2023   1:04 PM            121 .yarnrc
+-a----         1/18/2022   5:02 PM             63 mercurial.ini
+-a----         4/25/2024   3:52 PM           9744 package-lock.json
+-a----         4/25/2024   3:52 PM            107 package.json
+-a----         3/24/2025   7:59 PM              0 qa-training
+-a----         3/24/2025   7:56 PM              0 sabir.txt
+
+
+PS C:\Users\Md.Ahmed> Set-Location .\qa-training1\
+PS C:\Users\Md.Ahmed\qa-training1> git --version
+
+PS C:\Users\Md.Ahmed\qa-training1> git clone https://github.com/sureshnanjan/playwright-training-0325.git
+
+PS C:\Users\Md.Ahmed\qa-training1> Set-Location playwright-training-0325
+PS C:\Users\Md.Ahmed\qa-training1\playwright-training-0325> dir
+
+
+    Directory: C:\Users\Md.Ahmed\qa-training1\playwright-training-0325
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         3/24/2025   8:05 PM           2277 .gitignore
+-a----         3/24/2025   8:05 PM             92 README.md
+
+
+PS C:\Users\Md.Ahmed\qa-training1\playwright-training-0325> git status
+
+PS C:\Users\Md.Ahmed\qa-training1\playwright-training-0325> git checkout -b sabir-branch
+
+PS C:\Users\Md.Ahmed\qa-training1\playwright-training-0325> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20250324200740
+**********************
