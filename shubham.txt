@@ -1,0 +1,158 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20250325121418
+Username: INCOFORGETECH\Shubham.Mahapatra
+RunAs User: INCOFORGETECH\Shubham.Mahapatra
+Configuration Name: 
+Machine: LP-TZD-0X127162 (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 13760
+PSVersion: 5.1.22621.4391
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.4391
+BuildVersion: 10.0.22621.4391
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is shubham.txt
+PS C:\Users\shubham.mahapatra> New-Item -path . -name qa-training
+
+
+    Directory: C:\Users\shubham.mahapatra
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        25-03-2025     12:15              0 qa-training
+
+
+PS C:\Users\shubham.mahapatra> dir
+
+
+    Directory: C:\Users\shubham.mahapatra
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        10-12-2024     16:35                .eclipse
+d-----        18-12-2024     16:13                .gradle
+d-----        12-02-2025     07:59                .lemminx
+d-----        12-02-2025     07:58                .m2
+d-----        17-02-2025     22:09                .p2
+d-----        20-12-2024     14:06                .vscode
+d-r---        04-12-2024     16:17                Contacts
+d-----        20-12-2024     14:45                Documents
+dar---        25-03-2025     12:06                Downloads
+d-----        11-12-2024     18:49                eclipse-works
+                                                  pace
+d-r---        04-12-2024     16:17                Favorites
+d-r---        04-12-2024     16:17                Links
+d-r---        04-12-2024     16:17                Music
+d-----        20-12-2024     14:36                node_modules
+d-r---        04-12-2024     17:15                OneDrive
+d-r---        25-02-2025     19:17                Pictures
+d-----        14-01-2025     14:10                playwright-re
+                                                  port
+d-----        10-12-2024     16:29                Postman
+d-r---        04-12-2024     16:17                Saved Games
+d-r---        04-12-2024     17:21                Searches
+d-----        14-01-2025     14:10                test-results
+d-----        20-12-2024     14:36                tests
+d-----        20-12-2024     14:36                tests-example
+                                                  s
+d-r---        13-12-2024     12:51                Videos
+-a----        20-12-2024     14:36             83 .gitignore
+-a----        24-03-2025     21:48              0 .node_repl_hi
+                                                  story
+-a----        24-03-2025     21:08       16804122 git-installer
+                                                  .exe
+-a----        20-12-2024     14:36           2993 package-lock.
+                                                  json
+-a----        20-12-2024     14:36            263 package.json
+-a----        25-02-2025     19:41           1319 Pictures -
+                                                  Shortcut
+                                                  (2).lnk
+-a----        26-02-2025     12:27           1319 Pictures -
+                                                  Shortcut
+                                                  (3).lnk
+-a----        26-02-2025     12:36           1319 Pictures -
+                                                  Shortcut
+                                                  (4).lnk
+-a----        27-02-2025     15:17           1319 Pictures -
+                                                  Shortcut
+                                                  (5).lnk
+-a----        27-02-2025     15:19           1319 Pictures -
+                                                  Shortcut
+                                                  (6).lnk
+-a----        27-02-2025     15:20           1319 Pictures -
+                                                  Shortcut
+                                                  (7).lnk
+-a----        27-02-2025     15:22           1319 Pictures -
+                                                  Shortcut
+                                                  (8).lnk
+-a----        24-02-2025     21:31           1319 Pictures -
+                                                  Shortcut.lnk
+-a----        20-12-2024     14:36           2150 playwright.co
+                                                  nfig.js
+-a----        25-03-2025     12:15              0 qa-training
+-a----        25-03-2025     12:14              0 shubham.txt
+
+
+PS C:\Users\shubham.mahapatra> Set-Location .\qa-training
+Set-Location : Cannot find path '.\qa-training' because it does not exist.
+At line:1 char:1
++ Set-Location .\qa-training
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (.\qa-training:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+Set-Location : Cannot find path '.\qa-training' because it does
+not exist.
+At line:1 char:1
++ Set-Location .\qa-training
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (.\qa-training:St
+   ring) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell
+   .Commands.SetLocationCommand
+
+PS C:\Users\shubham.mahapatra> New-Item -path . -name qa-training1 -Type Directory
+
+
+    Directory: C:\Users\shubham.mahapatra
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        25-03-2025     12:19                qa-training1
+
+
+PS C:\Users\shubham.mahapatra> Set-Location .\qa-training1\
+PS C:\Users\shubham.mahapatra\qa-training1> git --version
+
+PS C:\Users\shubham.mahapatra\qa-training1> git clone https://github.com/sureshnanjan/playwright-training-0325.git
+
+PS C:\Users\shubham.mahapatra\qa-training1> Set-Location playwright-training-0325
+PS C:\Users\shubham.mahapatra\qa-training1\playwright-training-0325> dir
+
+
+    Directory: C:\Users\shubham.mahapatra\qa-training1\playwrigh
+    t-training-0325
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        25-03-2025     12:22           2277 .gitignore
+-a----        25-03-2025     12:22             92 README.md
+
+
+PS C:\Users\shubham.mahapatra\qa-training1\playwright-training-0325> git status
+
+PS C:\Users\shubham.mahapatra\qa-training1\playwright-training-0325> git checkout -b shubham-branch
+
+PS C:\Users\shubham.mahapatra\qa-training1\playwright-training-0325> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20250325122522
+**********************
