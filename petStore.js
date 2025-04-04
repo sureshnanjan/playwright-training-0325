@@ -20,7 +20,8 @@ const pet = {
   console.log("pet id : "+ pet.id)
   console.log("Pet categroy id "+ pet.category.id)
   console.log("Pet category name"+pet.category.name)
-  console.log("pet name"+pet.name)
-  console.log("pet tags"+pet.tags)
-  console.log("pet tags name"+pet.tags.name)
-  console.log("pet status"+pet.status)
+  console.log("pet name "+pet.name)
+  console.log("pet tags id "+pet.tags[0].id)
+  console.log("pet tags name "+pet.tags[0].name)
+  console.log("pet status "+pet.status)
+  console.log(typeof(pet.category.id));
