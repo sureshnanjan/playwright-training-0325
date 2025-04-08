@@ -1,0 +1,73 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20250408114835
+Username: UKCOFORGETECH\Sachin.Yadav
+RunAs User: UKCOFORGETECH\Sachin.Yadav
+Configuration Name: 
+Machine: LAP-UK-8082258 (Microsoft Windows NT 10.0.19045.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 42664
+PSVersion: 5.1.19041.5607
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.5607
+BuildVersion: 10.0.19041.5607
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is sachin.txt
+PS C:\Users\Sachin.Yadav> New-Item -Path "C:\Users\Sachin.Yadav\OneDrive - Coforge Limited\Sachin\Peabody\Playwright\Training_Workspace" -Name ‘QA-Training’ -ItemType Directory 
+
+
+    Directory: C:\Users\Sachin.Yadav\OneDrive - Coforge Limited\Sachin\Peabody\Playwright\Training_Workspace
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        08/04/2025     11:49                QA-Training
+
+
+PS C:\Users\Sachin.Yadav> Set-Location "C:\Users\Sachin.Yadav\OneDrive - Coforge Limited\Sachin\Peabody\Playwright\Training_Workspace\QA-Training"
+PS C:\Users\Sachin.Yadav\OneDrive - Coforge Limited\Sachin\Peabody\Playwright\Training_Workspace\QA-Training> git --version
+git version 2.45.0.windows.1
+PS C:\Users\Sachin.Yadav\OneDrive - Coforge Limited\Sachin\Peabody\Playwright\Training_Workspace\QA-Training> git clone https://github.com/sureshnanjan/playwright-training-0325.git
+Cloning into 'playwright-training-0325'...
+remote: Enumerating objects: 194, done.
+remote: Counting objects: 100% (80/80), done.
+remote: Compressing objects: 100% (46/46), done.
+remote: Total 194 (delta 43), reused 61 (delta 31), pack-reused 114 (from 1)
+Receiving objects: 100% (194/194), 395.91 KiB | 8.25 MiB/s, done.
+Resolving deltas: 100% (78/78), done.
+PS C:\Users\Sachin.Yadav\OneDrive - Coforge Limited\Sachin\Peabody\Playwright\Training_Workspace\QA-Training> Set-Location .\playwright-training-0325\
+PS C:\Users\Sachin.Yadav\OneDrive - Coforge Limited\Sachin\Peabody\Playwright\Training_Workspace\QA-Training\playwright-training-0325> dir
+
+
+    Directory: C:\Users\Sachin.Yadav\OneDrive - Coforge Limited\Sachin\Peabody\Playwright\Training_Workspace\QA-Training\playwright-training-0325
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l        08/04/2025     11:53                .github
+-a---l        08/04/2025     11:52           2277 .gitignore
+-a---l        08/04/2025     11:52          18065 HelloWorld.png
+-a---l        08/04/2025     11:52            384 nodejs-intro.js
+-a---l        08/04/2025     11:52            340 package.json
+-a---l        08/04/2025     11:52             92 README.md
+
+
+PS C:\Users\Sachin.Yadav\OneDrive - Coforge Limited\Sachin\Peabody\Playwright\Training_Workspace\QA-Training\playwright-training-0325> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\Users\Sachin.Yadav\OneDrive - Coforge Limited\Sachin\Peabody\Playwright\Training_Workspace\QA-Training\playwright-training-0325> git checkout -b sachin-branch
+Switched to a new branch 'sachin-branch'
+PS C:\Users\Sachin.Yadav\OneDrive - Coforge Limited\Sachin\Peabody\Playwright\Training_Workspace\QA-Training\playwright-training-0325> git status
+On branch sachin-branch
+nothing to commit, working tree clean
+PS C:\Users\Sachin.Yadav\OneDrive - Coforge Limited\Sachin\Peabody\Playwright\Training_Workspace\QA-Training\playwright-training-0325> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20250408115524
+**********************
