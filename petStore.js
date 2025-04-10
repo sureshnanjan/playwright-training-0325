@@ -17,6 +17,20 @@ const pet = {
     status: "available"
   };
 
+  function doAdd(){
+    console.log("additon function")
+  }
+
+  function doSub(){
+    console.log("subraction done here")
+  }
+
+  function invoke_any(funName){
+    funName();
+  }
+
+  invoke_any(doAdd)
+  invoke_any(doSub)
   console.log("pet id : "+ pet.id)
   console.log("Pet categroy id "+ pet.category.id)
   console.log("Pet category name"+pet.category.name)
