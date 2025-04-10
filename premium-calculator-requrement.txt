@@ -1,0 +1,17 @@
+If the age is less than 15 
+	If Female 
+	= Premium = 15
+	Male 
+		premium 18%
+If age is 16 - 25 
+	pre = 20
+	
+If age > 60 
+`	pre = 10%
+
+14, Female - 15
+14 M  - 18
+18 Male - 20
+18 Female - 20
+61 Male - 10
+61 Female - 10
