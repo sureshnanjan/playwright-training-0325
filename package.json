@@ -13,5 +13,8 @@
   "devDependencies": {
     "@cucumber/cucumber": "^11.2.0",
     "mocha": "^11.1.0"
+  },
+  "dependencies": {
+    "playwright-training-0325": "file:"
   }
 }
