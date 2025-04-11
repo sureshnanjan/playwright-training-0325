@@ -7,11 +7,20 @@ describe('Insurance Premium', function () {
     });
     it('should return 10 when age is more than 60 female', function () {
         equal(calculate_premium(61,"F"),10);
-        const premium = alculate_premium(61,"F")
+        const premium = calculate_premium(61,"F")
         premium.should.equal(10);
       });
       it('should return 15 when age is less  than 15  female', function () {
         equal(calculate_premium(14,"F"),15);
+      });
+      it('should return 15 when age is less  than 15  male', function () {
+        equal(calculate_premium(14,"M"),18);
+      });
+      it('should return 20 when age is between 16 to 25  female', function () {
+        equal(calculate_premium(18,"F"),20);
+      });
+      it('should return 20 when age is between 16 to 25  male', function () {
+        equal(calculate_premium(18,"M"),20);
       });
   });
 });
