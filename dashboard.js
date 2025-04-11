@@ -88,3 +88,17 @@ export function calculate_premium(age,gender){
 }
 
 console.log(calculate_premium(20,"M"));
+
+export function calculate_premium1(age,gender){
+    if (age > 60) {
+        return 10;
+    }
+    if (age < 15 && gender === "F") {
+        return 15
+    } else {
+        100;
+    }
+    return 100;
+}
+
+console.log(calculate_premium(20,"M"));
