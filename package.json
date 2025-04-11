@@ -4,14 +4,17 @@
   "description": "Training repository for automation with Playwright Java Script",
   "main": "nodejs-intro.js",
   "type": "module",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "scripts": {},
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@cucumber/cucumber": "^11.2.0",
+    "@playwright/test": "^1.51.1",
+    "@types/node": "^22.14.0",
     "mocha": "^11.1.0"
+  },
+  "dependencies": {
+    "playwright-training-0325": "file:"
   }
 }
