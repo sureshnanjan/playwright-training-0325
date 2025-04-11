@@ -14,3 +14,7 @@ Given Sita is more than 14 years
 When she applies for insurance
 Then she should get 15 percent premium
 
+Scenario: Citizen get 20 percent Premium
+Given Sita is more than 18 years
+When he applies for insurance
+Then he should get 20 percent premium
