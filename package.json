@@ -15,6 +15,7 @@
     "mocha": "^11.1.0"
   },
   "dependencies": {
+    "playwright": "^1.51.1",
     "playwright-training-0325": "file:"
   }
 }
