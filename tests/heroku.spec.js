@@ -42,7 +42,19 @@ test('AB Test Page Has correct Title', async ({ page }) => {
     await expect(page.getByRole('heading')).toContainText('A/B Test Control');
   });
 
-
+// Test 11 – Check for presence of "Elemental Selenium" link in the footer
+test('Footer has Elemental Selenium link', async ({ page }) => {
+    await page.goto('/');
+    const footerLink = page.locator('a').last();
+    await expect(footerLink).toHaveText('Elemental Selenium');
+  });
+  
+  // Test 34 – Check for presence of "Exit Intent" link and title on that page
+  test('Exit Intent page loads with correct title', async ({ page }) => {
+    await page.goto('/');
+    await page.getByRole('link', { name: 'Exit Intent' }).click();
+    await expect(page.locator('h3')).toHaveText('Exit Intent');
+  });
 
 
 
