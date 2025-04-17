@@ -27,7 +27,7 @@ test('Home Page Has 44 Available Examples Failing', async ({ page }) => {
     expect(actual_count).toEqual(expected_count)
 });
 
-test.only('Home Page Has 44 Available Examples Passing', async ({ page }) => {
+test('Home Page Has 44 Available Examples Passing', async ({ page }) => {
     await page.goto('/');
     const expected_count = 44
     const actual_count = await page.locator('a').filter({ hasNot: page.locator('img') }).filter({hasNotText:'Elemental Selenium'}).count()
