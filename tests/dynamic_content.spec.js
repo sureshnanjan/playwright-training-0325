@@ -1,6 +1,7 @@
 import { test, expect } from '@playwright/test';
 
 test('Dynamic content loading', async ({ page }) => {  
+  await page.goto('/');
   await page.getByRole('link', { name: 'Dynamic Loading' }).click();
   await expect(page).toHaveURL(/.*dynamic_loading/);  
 });
