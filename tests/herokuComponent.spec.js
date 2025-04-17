@@ -14,7 +14,7 @@ test('Verify the website title matches "The internet" ', async ({ page }) => {
 
   // Verify the page title after navigation
   await expect(page).toHaveTitle('The Internet');
-  await page.waitForTimeout(5000);
+ // await page.waitForTimeout(5000);
 });
 
 test ('Verify component page title matches with Exit Intent', async({page}) => {
