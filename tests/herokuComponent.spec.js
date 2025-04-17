@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 test('Verify the website title matches "The internet" ', async ({ page }) => {
-  await page.goto('https://the-internet.herokuapp.com/');
+  await page.goto('/');
 
   // Locate the component with a specific href in a list
   const hrefValue = '/exit_intent';
@@ -18,7 +18,7 @@ test('Verify the website title matches "The internet" ', async ({ page }) => {
 });
 
 test ('Verify component page title matches with Exit Intent', async({page}) => {
-    await page.goto('https://the-internet.herokuapp.com/');
+    await page.goto('/');
   const hrefValue = '/exit_intent';
   const component = await page.locator(`li a[href="${hrefValue}"]`);
 
@@ -34,20 +34,19 @@ test ('Verify component page title matches with Exit Intent', async({page}) => {
 })
 
 test("Verify the popup header have 'This is a modal window' ", async({page}) => {
-  await page.goto('https://the-internet.herokuapp.com/');
+  await page.goto('/');
   const hrefValue = '/exit_intent';
   const component = await page.locator(`li a[href="${hrefValue}"]`);
   await expect(component).toBeVisible();
   await component.click();
   await page.mouse.up();
   await page.mouse.down();
-//  await page.waitForSelector('#ouibounce-modal', { state: 'visible' });
   const actualPopTitle = await page.locator("#ouibounce-modal h3");
   await expect(actualPopTitle).toHaveText('This is a modal window');
 })
 
 test("Verify user is able to close the popup box", async({page}) => {
-    await page.goto('https://the-internet.herokuapp.com/');
+    await page.goto('/');
     const hrefValue = '/exit_intent';
     const component = await page.locator(`li a[href="${hrefValue}"]`);
     await expect(component).toBeVisible();
