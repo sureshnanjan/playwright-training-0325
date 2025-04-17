@@ -58,8 +58,7 @@ test("Dropdown page loads and dropdown is working", async ({ page }) => {
   expect(selectedOption).toBe("2");
 });
 
-// Test 34 – Nested Frames page loads and middle frame contains correct text', async ({ page }) => {
-await page.goto("/");
+// Test 34 – Nested Frames page loads and middle frame contains correct text
 test("Nested Frames page loads and middle frame contains correct text", async ({
   page,
 }) => {
