@@ -1,18 +1,10 @@
 import { test, expect } from '@playwright/test';
 test('Verify the website title matches "The internet" ', async ({ page }) => {
   await page.goto('/');
-
-  // Locate the component with a specific href in a list
   const hrefValue = '/exit_intent';
   const component = await page.locator(`li a[href="${hrefValue}"]`);
-
-  // Ensure the component is found
   await expect(component).toBeVisible();
-
-  // Perform actions on the located component
   await component.click();
-
-  // Verify the page title after navigation
   await expect(page).toHaveTitle('The Internet');
  // await page.waitForTimeout(5000);
 });
