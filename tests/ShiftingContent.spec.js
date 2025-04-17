@@ -1,0 +1,36 @@
+import { test, expect } from '@playwright/test';
+
+test('test', async ({ page }) => {
+  await page.goto('https://the-internet.herokuapp.com/');
+  await page.getByRole('link', { name: 'Shifting Content' }).click();
+  await page.getByRole('heading', { name: 'Shifting Content' }).click();
+  await page.getByText('These examples demonstrate').click();
+  await page.getByRole('link', { name: 'Example 1: Menu Element' }).click();
+  await page.getByRole('heading', { name: 'Shifting Content: Menu Element' }).click();
+  await page.getByText('This example demonstrates a').click();
+  await page.getByRole('link', { name: 'Home' }).click();
+  await page.getByRole('link', { name: 'Shifting Content' }).click();
+  await page.getByRole('link', { name: 'Example 2: An image' }).click();
+  await page.getByRole('heading', { name: 'Shifting Content: Image' }).click();
+  await page.getByText('This example demonstrates an').click();
+  await page.getByText('To load it randomly, append ?').click();
+  await page.locator('p').filter({ hasText: 'To load it randomly, append ?' }).getByRole('link').click();
+  await page.locator('#content').getByRole('img').click();
+  await page.getByText('To specify a differant numbor').click();
+  await page.locator('p').filter({ hasText: 'To specify a differant numbor' }).getByRole('link').click();
+  await page.getByText('To do both together, use ?').click();
+  await page.locator('p').filter({ hasText: 'To do both together, use ?' }).getByRole('link').click();
+  await page.locator('#content').getByRole('img').click();
+  await page.getByText('For a simple image append ?').click();
+  await page.locator('p').filter({ hasText: 'For a simple image append ?' }).getByRole('link').click();
+  await page.locator('#content').getByRole('img').click();
+  await page.goto('https://the-internet.herokuapp.com/shifting_content/image?mode=random&pixel_shift=100');
+  await page.goto('https://the-internet.herokuapp.com/shifting_content/image?pixel_shift=100');
+  await page.goto('https://the-internet.herokuapp.com/shifting_content/image?mode=random');
+  await page.goto('https://the-internet.herokuapp.com/shifting_content/image');
+  await page.goto('https://the-internet.herokuapp.com/shifting_content');
+  await page.getByRole('link', { name: 'Example 3: List' }).click();
+  await page.getByRole('heading', { name: 'Shifting Content: List' }).click();
+  await page.getByText('This example demonstrates a').click();
+  await page.getByText('Nesciunt autem eum odit fuga').click();
+});
