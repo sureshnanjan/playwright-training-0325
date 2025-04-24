@@ -8,9 +8,9 @@ test('Verifying the URL , heading, content of the page1', async ({ page }) => {
 })
 test('Verifying link1 of the page1 with its heading, content and sub links of page2', async ({ page }) => {
   await page.goto('https://the-internet.herokuapp.com/dynamic_loading/1'); // URL VERIFCATION OF PAGE2
-  await page.getByRole('link', { name: 'Example 1: Element on page' }).click(); // Link1 on the page1
+  //await page.getByRole('link', { name: 'Example 1: Element on page' }).click(); // Link1 on the page1
   await page.getByRole('heading', { name: 'Dynamically Loaded Page' }).click(); // Heading of page 2
-  //await page.getByRole('link', { name: 'Example 1: Element on page' }).click(); // Subheading of the page2
+  await page.getByRole('heading', { name: 'Example 1: Element on page' }).click(); // Subheading of the page2
   await page.getByRole('button', { name: 'Start' }).click();  // Sublink verifcation of page 2
   await page.getByRole('heading', { name: 'Hello World!' }).click(); // Content of Sublink redirected to page3.1
 })
