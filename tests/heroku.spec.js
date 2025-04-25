@@ -1,22 +1,32 @@
-import { test, expect } from "@playwright/test";
+import { test, expect } from '@playwright/test';
+import { HomePage } from '../pages/homepage';
+test('Heroku App is Available', async ({ page }) => {
+    await page.goto('/');
+    await expect(page).toHaveTitle(/The Internet/)
+    
 
-test("Heroku App is Available", async ({ page }) => {
-  await page.goto("/");
-  await expect(page).toHaveTitle(/The Internet/);
 });
-test("Home Page Title Matches", async ({ page, context, browserName }) => {
-  await page.goto("/");
-  const expected_title = "Welcome to the-internet";
-  const actual_title = page.locator("h1");
-  await expect(actual_title).toHaveText(expected_title);
+test('Home Page Title Matches', async ({ page , context, browserName}) => {
+    await page.goto('/');
+    const expected_title = "Welcome to the-internet"
+    const actual_title = page.locator('h1')
+    await expect(actual_title).toHaveText(expected_title)
 });
 
-test("Home Page Sub Title Matches", async ({ page }) => {
-  await page.goto("/");
-  const expected_title = "Available Examples";
-  const actual_title = page.locator("h2");
-  await expect(actual_title).toHaveText(expected_title);
-});
+test("Homepage Title with PO" , async ({page})=>{
+    const homePage = new HomePage();
+    const expected_title = "Welcome to the-internet"
+    const actual_title = homePage.getTitle()
+    
+
+})
+
+test('Home Page Sub Title Matches', async ({ page }) => {
+    await page.goto('/');
+    const expected_title = "Available Examples"
+    const actual_title = page.locator('h2')
+    await expect(actual_title).toHaveText(expected_title)
+  });
 
 test("Home Page Has 44 Available Examples Failing", async ({ page }) => {
   await page.goto("/");
