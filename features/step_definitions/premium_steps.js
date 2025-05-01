@@ -5,7 +5,7 @@ import { assert } from "console";
 let result = 0;
 let input_age = 0;
 
-Given('Suresh is more than {int} years', function (age) {
+Given('Suresh is more than {int} years', function (page) {
     // Given('Suresh is more than {float} years', function (float) {
       // Write code here that turns the phrase above into concrete actions
       input_age = age;
