@@ -10,8 +10,6 @@
   "license": "ISC",
   "devDependencies": {
     "@cucumber/cucumber": "^11.2.0",
-    "@playwright/test": "^1.52.0",
-    "@types/node": "^22.15.3",
     "mocha": "^11.1.0"
   },
   "dependencies": {
