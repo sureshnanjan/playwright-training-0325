@@ -1,22 +1,24 @@
+
+
 console.log("Pet Store")
- 
+
 let ApiResponse = {
-    "id": 0,
+    "id": 1,
     "category": {
-        "id": 0,
-        "name": "string"
+        "id": 123,
+        "name": "Parrot"
     },
-    "name": "doggie",
+    "name": "Parrot",
     "photoUrls": [
-        "string"
+        "../someurl"
     ],
     "tags": [
         {
-            "id": 0,
-            "name": "string"
+            "id": 1,
+            "name": "ParrotCat"
         }
     ],
     "status": "available"
 }
- 
+
 console.log(ApiResponse)
