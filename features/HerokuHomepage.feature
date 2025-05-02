@@ -3,3 +3,7 @@ Scenario: Home Page Title Matches
 Given Heroku Homepage is availavle
 When I read the title 
 Then the title should be "Welcome to the-internet"
+
+@loaddata
+Scenario: Test loading CSV Data
+Given I need Data

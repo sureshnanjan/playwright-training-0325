@@ -21,6 +21,10 @@ Then('the title should be {string}', async function (string) {
     expect(string).toEqual(actual_title)
 });
 
+Given("I need Data", async function () {
+    console.log(this)
+});
+
 AfterAll(()=>{
     browser.close()
 })
