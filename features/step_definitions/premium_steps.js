@@ -6,9 +6,11 @@ let result = 0;
 let input_age = 0;
 let input_gender = "";
 
-Given('Suresh is more than {int} years', function (age) {
-    input_age = age;
-});
+Given('Suresh is more than {int} years', function (page) {
+    // Given('Suresh is more than {float} years', function (float) {
+      // Write code here that turns the phrase above into concrete actions
+      input_age = age;
+    });
 
 When('he applies for insurance', function () {
     result = calculate_premium(input_age, input_gender);
