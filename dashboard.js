@@ -27,18 +27,17 @@ console.log(trainer.toUpperCase())
 console.log(ApiResponse)
 */
 
-function DoPrint(){
+function DoPrint() {
     // Declaration
     console.log("Doing Print")
     // Print employee attanedve to WgatsSpp
     // 
 }
 
-function add(arg1, arg2)
-{
+function add(arg1, arg2) {
     console.log("Doing Addition")
     // Print employee attanedve to WgatsSpp
-    return arg1 + arg2; 
+    return arg1 + arg2;
 }
 
 /*
@@ -53,7 +52,7 @@ console.log(typeof my_addition_func)
 console.log(typeof x)
 console.log(typeof my_name)
 */
-function invoke_any(input_func){
+function invoke_any(input_func) {
     console.log("This function can invoke any other");
     input_func();
 }
@@ -62,7 +61,7 @@ function invoke_any(input_func){
 //invoke_any(add)
 
 
-let myfunc = function (){
+let myfunc = function () {
     console.log("This is anonymous");
 }
 
@@ -70,21 +69,28 @@ let myfunc = function (){
 
 // Arrow Function 
 
-let my_arrow = (a,b) => a -b;
+let my_arrow = (a, b) => a - b;
 // Lambda expressions /// JS 
 
 //console.log(my_arrow(20,10));
 
-export function calculate_premium(age,gender){
+export function calculate_premium(age, gender) {
+    var premium = 0
+
     if (age > 60) {
-        return 10;
+        premium = 10;
     }
     if (age < 15 && gender === "F") {
-        return 15
-    } else {
-        100;
+        premium = 15;
     }
-    return 100;
+    if (age < 15 && gender === "M") {
+        premium = 18;
+    }
+    if (age >= 16 && age <= 25) {
+        premium = 20;
+    }
+
+    return premium;
 }
 
-console.log(calculate_premium(20,"M"));
+console.log(calculate_premium(20, "M"));
