@@ -2,6 +2,12 @@
     "default": {
         "formatOptions": {
             "snippetInterface": "synchronous"
-        }
+        },
+        "import": [
+            "features/support/world.js",
+            "features/support/csv_hooks.js",
+            "features/support/hooks/**/*.js",
+            "features/step_definitions/**/*.js"
+            ]
     }
 }
