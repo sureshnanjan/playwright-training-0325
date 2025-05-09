@@ -14,7 +14,7 @@ export class BasePageWithLogger {
     
     // Use provided logger or create default one
     this.logger = logger || new Logger({ 
-      logLevel: 'info',
+      logLevel: 'debug',
       console: true,
       file: true, 
       filePath: './logs/automation.log'
