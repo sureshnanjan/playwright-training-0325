@@ -4,7 +4,6 @@ import { AddRemove } from '../pages/add_remove_page';
 import { MultipleWindows } from '../pages/multiple_windows_page';
 test('Title is correct', async ({ page }) => {
     const homePage = new HomePage(page);
-    await homePage.navigate();
     const titleText = await homePage.getTitle();
     expect(titleText).toContain('Welcome to the-internet');
 });

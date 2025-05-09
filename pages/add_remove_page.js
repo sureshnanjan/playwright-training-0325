@@ -1,4 +1,4 @@
-import { BasePage } from "./base_page";
+import { BasePage } from "./reference_base_page";
 
 export class AddRemove extends BasePage{
     constructor(page){

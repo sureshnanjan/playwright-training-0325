@@ -28,3 +28,9 @@ Given("I need Data", async function () {
 AfterAll(()=>{
     browser.close()
 })
+
+function Click(params) {
+
+    
+    
+}

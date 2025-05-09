@@ -1,5 +1,5 @@
-import { BasePage } from "./base_page.js";
-export class HomePage extends BasePage{
+import {BasePageWithLogger} from './reference_base_page_logger.js'
+export class HomePageWithLogger extends BasePageWithLogger{
     constructor(page) {
           super(page);
           this.url = 'https://the-internet.herokuapp.com/';
@@ -9,7 +9,7 @@ export class HomePage extends BasePage{
         }
         
         static async create(page) {
-          const instance = new HomePage(page);
+          const instance = new HomePageWithLogger(page);
           // Do async initialization here
           await instance.navigate();
           return instance;
@@ -21,7 +21,6 @@ export class HomePage extends BasePage{
       
         async getTitle() {
           return await super.getText(this.title);
-          // click 
         }
       
         async getSubTitle() {
