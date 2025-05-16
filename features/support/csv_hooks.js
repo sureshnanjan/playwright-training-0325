@@ -27,6 +27,6 @@ Before(async function(scenario) {
 
 // Clean up CSV data after scenarios
 After(function() {
-  this.csvData = [];
-  this.currentRow = null;
+  //this.csvData = [];
+  //this.currentRow = null;
 });

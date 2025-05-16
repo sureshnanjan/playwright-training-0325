@@ -1,0 +1,22 @@
+[
+    {
+      "Name": "suresh",
+      "email": "suresh@email.com",
+      "department": "training"
+    },
+    {
+      "Name": "user2",
+      "email": "email2@email.com",
+      "department": "department2"
+    },
+    { "Name": "sahiba", "email": "sahiba@email", "department": "training" },
+    {
+      "Name": "suresh",
+      "email": "suresh@email.com",
+      "department": "training"
+    },
+    {
+      "Name": "user2",
+      "email": "email2@email.com",
+      "department": "department2"
+    }]

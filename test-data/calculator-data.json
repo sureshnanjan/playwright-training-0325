@@ -1,0 +1,62 @@
+[
+  {
+    "first": 5,
+    "second": 7,
+    "result": 12,
+    "description": "Simple addition with positive numbers"
+  },
+  {
+    "first": 10,
+    "second": 20,
+    "result": 30,
+    "description": "Addition with multiples of 10"
+  },
+  {
+    "first": -5,
+    "second": 8,
+    "result": 3,
+    "description": "Addition with negative and positive numbers"
+  },
+  {
+    "first": 100,
+    "second": 200,
+    "result": 300,
+    "description": "Addition with larger numbers"
+  },
+  {
+    "first": -10,
+    "second": -20,
+    "result": -30,
+    "description": "Addition with negative numbers"
+  },
+  {
+    "first": 0,
+    "second": 15,
+    "result": 15,
+    "description": "Addition with zero"
+  },
+  {
+    "first": 3.5,
+    "second": 2.5,
+    "result": 6,
+    "description": "Addition with decimal numbers"
+  },
+  {
+    "first": 999,
+    "second": 1,
+    "result": 1000,
+    "description": "Addition resulting in a round number"
+  },
+  {
+    "first": 42,
+    "second": 0,
+    "result": 42,
+    "description": "Addition with zero (identity property)"
+  },
+  {
+    "first": 1234,
+    "second": 5678,
+    "result": 6912,
+    "description": "Addition with four-digit numbers"
+  }
+]
