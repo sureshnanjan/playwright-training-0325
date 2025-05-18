@@ -142,4 +142,4 @@ dist
 /playwright/.cache/
 
 # Processed Emails
-/utilities/downloaded-emails/
+/downloaded-emails/
