@@ -1,3 +1,4 @@
+import * as allure from "allure-js-commons";
 /**
  * BasePage class with wrapper methods for common UI operations
  * using Playwright's API and proper wait strategies
@@ -14,12 +15,14 @@ export class BasePage {
    * Navigate to a URL with timeout and wait until network is idle
    */
   async navigateTo(url) {
+    await allure.startStep(`Navigate to ${url}`);
     try {
       await this.page.goto(url, { 
         timeout: this.timeout,
         waitUntil: 'networkidle' 
       });
       console.log(`Navigated to: ${url}`);
+      //await allure.
     } catch (error) {
       console.error(`Failed to navigate to ${url}: ${error}`);
       throw error;

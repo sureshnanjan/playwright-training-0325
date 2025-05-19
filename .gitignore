@@ -143,3 +143,5 @@ dist
 
 # Processed Emails
 utilities/downloaded_emails/
+allure-report
+allure-results
